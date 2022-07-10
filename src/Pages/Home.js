@@ -6,7 +6,7 @@ import CardHome from "../Component/CardHome";
 const Home = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    const url = "http://localhost:8000/api/home";
+    const url = "https://ihappysoni-blog-app-backend.herokuapp.com/api/home";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setData(res));

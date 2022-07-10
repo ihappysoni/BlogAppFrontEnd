@@ -5,7 +5,7 @@ import Card from "../Component/Card";
 const Bollywood = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    const url = "http://localhost:8000/api/bolly";
+    const url = "https://ihappysoni-blog-app-backend.herokuapp.com/api/bolly";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setData(res));

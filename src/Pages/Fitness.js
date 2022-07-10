@@ -5,7 +5,7 @@ import Card from "../Component/Card";
 const Fitness = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    const url = "http://localhost:8000/api/fit";
+    const url = "https://ihappysoni-blog-app-backend.herokuapp.com/api/fit";
     fetch(url)
       .then((res) => res.json())
       .then((res) => setData(res));
